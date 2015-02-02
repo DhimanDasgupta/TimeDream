@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff000000">
+
+    <LinearLayout
+        android:id="@+id/dream_service_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dream_service_time_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hour"
+            android:textColor="#aaffffff"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/dream_service_colon_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/colon"
+            android:textColor="#ffcccccc"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/dream_service_time_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minute"
+            android:textColor="#88ffffff"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/dream_service_colon_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/colon"
+            android:textColor="#ffcccccc"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/dream_service_time_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/second"
+            android:textColor="#66ffffff"
+            android:textSize="48sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dream_service_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#ccffffff"
+        android:layout_below="@id/dream_service_linear_layout"
+        android:layout_alignLeft="@id/dream_service_linear_layout"
+        android:layout_marginTop="16dp"
+        android:text="@string/date"/>
+</RelativeLayout>
