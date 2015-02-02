@@ -1,7 +1,6 @@
 package com.dhiman.timedream;
 
 import android.annotation.TargetApi;
-import android.graphics.Point;
 import android.os.Build;
 import android.os.Handler;
 import android.service.dreams.DreamService;
@@ -11,7 +10,6 @@ import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Random;
 
 
 /**
@@ -34,9 +32,6 @@ public class TimeDreamService extends DreamService {
     private TextView mTextViewSecond;
 
     private TextView mTextViewDate;
-
-    private final Point mSize = new Point();
-    private Random mRandom = new Random();
 
     private final Handler mHandlerUpdate = new Handler();
     private final Runnable mRunnableUpdate = new Runnable() {
