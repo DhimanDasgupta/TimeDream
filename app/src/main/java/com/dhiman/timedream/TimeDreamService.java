@@ -51,6 +51,7 @@ public class TimeDreamService extends DreamService {
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
 
+        setFullscreen(true);
         setInteractive(false);
         setScreenBright(false);
 
